@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.landingPopup p{
+    text-align: center;
+}
+.navLogo img {
+    width:125px;
+    padding:10px 0px 10px 25px ;
+}
+.navWrapper {
+    border: ;
+}
