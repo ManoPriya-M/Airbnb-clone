@@ -1,14 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
 *{
     margin: 0;
-    padding:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
-.landingPopup p{
+
+.navWrapper{
+    border-bottom: 1px solid #E8E8E8;
+    display: flex;
+    padding: 8px 70px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 90%;
+
+}
+
+.landingPopup {
+    background-color: #F7F7F7;
+    padding: 20px 0;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.landingPopup p {
     text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer; 
+    width: 40%;
+    margin: auto;
+    font-weight: 500;
 }
+
 .navLogo img {
-    width:125px;
-    padding:10px 0px 10px 25px ;
+    width: 125px;
 }
-.navWrapper {
-    border: ;
+
+.navMiddle {
+    list-style: none;
+    border-radius: 50px;
+    border: 1px solid #E8E8E8;
+    height: fit-content;
+    padding: 3px 7px;
+    box-shadow: 1px 1px 1px 1px#E8E8E8;
+    cursor: pointer;
+}
+
+.navMiddle:hover {
+    box-shadow: 0px 4px 5px 0px #E8E8E8;
+    transition: 0.3s;
+}
+
+.navMiddle li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 2px 12px;
+    border-right: 2px solid #E8E8E8;
+    font-weight: 500;
+}
+
+.navMiddle .navliLast {
+    border-right: none;
+    font-weight: 400;
+}
+.navMiddle .navMiddleSearch{
+    padding: 5px 5px 5px 1px;
+    border-right: none;
+}
+.navMiddleSearch img {
+    background-color: #FF385C;
+    color: #fff;
+    width: 13px;
+    padding: 7px;
+    border-radius: 50px;
+}
+
+.navLast {
+    justify-content: space-around;
+    display: inline-block;
+}
+
+.navL1 {
+    display: inline-block; 
+    font-weight: 500;
+  
+}
+
+.navLast img {
+    width: 17px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navL2 {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50px;
+    border: 1.5px solid #E8E8E8;
+    height: fit-content;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+
+.navLast .navL2 .menuIcon {
+    width: 17px;
+    padding: 6px 6px;
+}
+
+.navLast .navL2 .userIcon {
+    width: 30px;
+    padding: 6px 6px;
 }
