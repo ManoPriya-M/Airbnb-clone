@@ -288,7 +288,7 @@
     transform: translateX(11px);
   }
   
-  /* Rounded sliders */
+ 
   .slider.round {
     border-radius: 34px;
   }
@@ -319,10 +319,44 @@
     display: grid;
     width: 23.5%;
     height:100%;
-
+    
 
 }
+.like-button {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+}
 
+.like-icon {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.like-icon .fa-heart {
+    color: #222222;
+    
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+
+.heart-icon {
+    font-size: 24px;
+    color: #ccc; 
+    cursor: pointer;
+    transition: color 0.3s ease; 
+    
+}
+
+
+.like-icon .fa-heart.filled {
+    color: rgba(255, 0, 0, 0.82);
+    text-shadow: none;
+}
+  
 .image-gallery {
     position: relative;
     max-width: 800px;

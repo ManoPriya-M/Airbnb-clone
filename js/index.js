@@ -1,22 +1,33 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const taxCheckbox = document.getElementById('switch'); // Updated ID for the checkbox
-    const amountElements = document.querySelectorAll('b.output-rate'); // Updated selector for elements with class "output-rate"
+
+    const likeButtons = document.querySelectorAll('.like-icon');
+
+    likeButtons.forEach(likeButton => {
+        let isLiked = false;
+
+        likeButton.addEventListener('click', function() {
+            isLiked = !isLiked;
+            const heartIcon = this.querySelector('.fa-heart');
+            heartIcon.classList.toggle('filled', isLiked);
+        });
+    });
+    const taxCheckbox = document.getElementById('switch');
+    const amountElements = document.querySelectorAll('b.output-rate'); 
 
     if (amountElements.length > 0 && taxCheckbox) {
         amountElements.forEach(amountElement => {
-            const initialAmount = parseFloat(amountElement.textContent.replace(/[^\d.]/g, '')); // Extract the initial numeric amount
+            const initialAmount = parseFloat(amountElement.textContent.replace(/[^\d.]/g, '')); 
 
             function calculateTotalAmount() {
-                const isChecked = taxCheckbox.querySelector('input').checked; // Check if the checkbox is checked
+                const isChecked = taxCheckbox.querySelector('input').checked; 
 
                 if (isChecked) {
                     const taxAmount = initialAmount * 0.18;
                     const totalAmount = initialAmount + taxAmount;
 
-                    // Update the amount display
-                    amountElement.textContent = `₹${totalAmount.toFixed(2)}`; // Display the total amount with currency symbol and two decimal places
-                } else {
-                    // Display the initial amount without tax
+                    
+                    amountElement.textContent = `₹${totalAmount.toFixed(2)}`; 
+                   
                     amountElement.textContent = `₹${initialAmount.toFixed(2)}`;
                 }
             }
