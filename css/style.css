@@ -34,6 +34,7 @@
 .navLogo {
     display: inline-block;
     width: 21%;
+    padding: 0;
 }
 .navLogo img {
     width: 125px;
@@ -126,17 +127,23 @@
 
 .middleSection {
     padding: 8px 40px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid #E8E8E8;
+    
 }
 
 .middle1 {
     width: 70%;
+    display: inline-block;
     overflow-x: hidden;
+    position: relative;
+    vertical-align: middle;
 }
 .middleSection ul {
+    
     list-style: none;
     width: 260%;
     display: flex;
@@ -165,6 +172,10 @@
 }
 .arrowBack {
     position: absolute;
+    width: 24px;
+    display: block;
+    margin: auto;
+    
 
 }
 .middleIcons p {
@@ -182,17 +193,108 @@
 
 .middleFilter{
     display: inline-block;
+    vertical-align: middle;
+    border-radius: 15px;
+    border: 1.75px solid #E8E8E8;
+    height: fit-content;
+    padding: 2px 14px;
     cursor: pointer;
-    border: 1px solid #E8E8E8;
+
 
 }
 .middleFilter img{
     display: inline-block;
-    padding: 6px 6px;
+    padding: 13px 6px;
     width: 17px;
     height: auto;
+    vertical-align: middle;
+}
+.middleFilter p {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 13px;
+}
+.taxButton{
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 15px;
+    border: 1.75px solid #E8E8E8;
+    height: fit-content;
+    padding: 2px 14px 2px 14px;
+    cursor: pointer;
 }
 
+.taxButton p {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 13px 6px 13px 6px;
+}
+
+.taxButton .switch {
+    vertical-align: middle;
+}
+/* ---------------- Toogle -----------------------*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 24px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #b0b0b0;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 23px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #222222;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #222222;
+  }
+  
+  input:checked + .slider:before {
+    
+    transform: translateX(11px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 /* --------------Image grid --------------------*/
 
 .contentGrid {
