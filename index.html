@@ -142,13 +142,16 @@
             <p>Filters</p>
         </div>
 
-        <!-------------Display total button -------------------->
+        <!-------------Display total tax button -------------------->
         <div class="taxButton">
             <p>Display total before taxes </p>
-            <label class="switch">
+            <label id="switch">
                 <input type="checkbox">
-                <span class="slider round"></span>
+                <span class="slider round">
+                    
+                </span>   
               </label>
+              
         </div>
     
     </div>
@@ -158,8 +161,18 @@
         <!------------------GridRow 1----------------------->
         <div class="contentGridRow">
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/Tarur,India/1.webp" alt="">
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/Tarur,India/1.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/2.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/3.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/4.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/5.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button"><i class="arrow left"></i></button>
+                    <button class="next-button"><i class="arrow right"></i></button>
+                </div>
                     <div class="gridContent">
                         <h4>Tarur, India
                             <span>
@@ -170,159 +183,397 @@
                         </h4>
                         <p>499 kilometers away</p>
                         <p>28 Nov -3 Dec</p>
-                        <p><b>₹23,965</b>&nbsp;night</p>
+                        <p><b class="output-rate">₹23,965</b>&nbsp;night</p>
                     </div>
-                </a>
+               
             </div>
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/IN,India/1.webp" alt="">
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/IN,India/1.webp" alt="">
+                        <img src="./imgs/Farms/IN,India/2.webp" alt="">
+                        <img src="./imgs/Farms/IN,India/3.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button"><i class="arrow left"></i></button>
+                    <button class="next-button"><i class="arrow right"></i></button>
+                </div>
+                    
                     <div class="gridContent">
-                        <h4>IN,India</h4>
+                        <h4>IN,India
+                            <span>
+                                <span>
+                                    <img src="./imgs/star.png" alt="" >&nbsp;4.7
+                                </span>
+                            </span>
+                        </h4>
                         <p>512 kilometers away</p>
                         <p>21 Nov -1 Dec</p>
-                        <p><b>₹13,965</b>&nbsp;night</p>
+                        <p><b class="output-rate">₹13,965</b>&nbsp;night</p>
                     </div>
-                </a>
+              
             </div>
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/Karnataka,India/1.jpg" alt="">
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/Karnataka,India/1.jpg" alt="">
+                        <img src="./imgs/Farms/Karnataka,India/2.webp" alt="">
+                        <img src="./imgs/Farms/Karnataka,India/3.webp" alt="">
+                        <img src="./imgs/Farms/Karnataka,India/4.webp" alt="">
+                        <img src="./imgs/Farms/Karnataka,India/5.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </div>
                     <div class="gridContent">
-                        <h4>Karnataka,India</h4>
+                        <h4>Karnataka,India
+                            <span>
+                                <span>
+                                    <img src="./imgs/star.png" alt="" >&nbsp;4.7
+                                </span>
+                            </span>
+                        </h4>
                         <p>347 kilometers away</p>
                         <p>17 Nov -20 Nov</p>
-                        <p><b>₹33,123</b>&nbsp;night</p>
+                        <p><b class="output-rate">₹33,123</b>&nbsp;night</p>
                     </div>
-                </a>
+            
             </div>
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/Kodagu,India/1.webp" alt="">
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/Kodagu,India/1.webp" alt="">
+                        <img src="./imgs/Farms/Kodagu,India/5.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </div>
                     <div class="gridContent">
-                        <h4>Kodagu,India</h4>
+                        <h4>Kodagu,India
+                            <span>
+                                <span>
+                                    <img src="./imgs/star.png" alt="" >&nbsp;4.7
+                                </span>
+                            </span>
+                        </h4>
                         <p>214 kilometers away</p>
                         <p>1 Nov -14 Nov</p>
-                        <p><b>₹13,999</b>&nbsp;night</p>
+                        <p><b class="output-rate">₹13,999</b>&nbsp;night</p>
                     </div>
-                </a>
             </div>
         </div>
         <!-------------------GridRow2-------------------------->
         <div class="contentGridRow">
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/Kodaikanal,India/1.webp" alt="">
-                    <h4>Kodaikanal, India</h4>
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/Kodaikanal,India/2.webp" alt="">
+                        <img src="./imgs/Farms/Kodaikanal,India/3.webp" alt="">
+                        <img src="./imgs/Farms/Kodaikanal,India/4.webp" alt="">
+                        <img src="./imgs/Farms/Kodaikanal,India/5.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </div>
+                <div class="gridContent">
+                    <h4>Kodaikanal, India
+                        <span>
+                            <span>
+                                <img src="./imgs/star.png" alt="" >&nbsp;4.7
+                            </span>
+                        </span>
+                    </h4>
                     <p>430 kilometers away</p>
                     <p>4 Nov -14 Nov</p>
-                    <p><b>₹43,115</b>&nbsp;night</p>
-                </a>
+                    <p><b class="output-rate">₹43,115</b>&nbsp;night</p>
+                </div>
             </div>
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/Kottathara,India/1.webp" alt="">
-                    <h4>Kottathara,India</h4>
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/Kottathara,India/1.webp" alt="">
+                        <img src="./imgs/Farms/Kottathara,India/4.webp" alt="">
+                        <img src="./imgs/Farms/Kottathara,India/5.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </div>
+                <div class="gridContent">
+                    <h4>Kottathara,India
+                        <span>
+                            <span>
+                                <img src="./imgs/star.png" alt="" >&nbsp;4.7
+                            </span>
+                        </span>
+                    </h4>
                     <p>120 kilometers away</p>
                     <p>20 Nov -1 Dec</p>
-                    <p><b>₹52,965</b>&nbsp;night</p>
-                </a>
+                    <p><b class="output-rate">₹52,965</b>&nbsp;night</p>
+                </div>
             </div>
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/Mananthavady,India/1.jpg" alt="">
-                    <h4>Mananthavady,India</h4>
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/Mananthavady,India/1.jpg" alt="">
+                        <img src="./imgs/Farms/Mananthavady,India/2.webp" alt="">
+                        <img src="./imgs/Farms/Mananthavady,India/3.webp" alt="">
+                        <img src="./imgs/Farms/Mananthavady,India/4.webp" alt="">
+                        <img src="./imgs/Farms/Mananthavady,India/5.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </div>
+                <div class="gridContent">
+                    <h4>Mananthavady,India
+                        <span>
+                            <span>
+                                <img src="./imgs/star.png" alt="" >&nbsp;4.7
+                            </span>
+                        </span>
+                    </h4>
                     <p>330 kilometers away</p>
                     <p>28 Nov -12 Dec</p>
-                    <p><b>₹21,173</b>&nbsp;night</p>
-                </a>
+                    <p><b class="output-rate">₹21,173</b>&nbsp;night</p>
+                </div>
             </div>
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/Munnar,India/1.webp" alt="">
-                    <h4>Munnar,India</h4>
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/Munnar,India/1.webp" alt="">
+                        <img src="./imgs/Farms/Munnar,India/2.webp" alt="">
+                        <img src="./imgs/Farms/Munnar,India/3.webp" alt="">
+                        <img src="./imgs/Farms/Munnar,India/4.webp" alt="">
+                        <img src="./imgs/Farms/Munnar,India/5.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </div>
+                    <h4>Munnar,India
+                        <span>
+                            <span>
+                                <img src="./imgs/star.png" alt="" >&nbsp;4.7
+                            </span>
+                        </span>
+                    </h4>
                     <p>200 kilometers away</p>
                     <p>3 Dec -14 Dec</p>
-                    <p><b>₹30,299</b>&nbsp;night</p>
-                </a>
+                    <p><b class="output-rate">₹30,299</b>&nbsp;night</p>
+                
             </div>
         </div>
         <!-------------------------GridRow3--------------------------->
         <div class="contentGridRow">
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/IN,India/2.webp" alt="">
-                    <h4>Madikeri, India</h4>
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/IN,India/1.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/2.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/3.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/4.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/5.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </div>
+                    <h4>Madikeri, India
+                        <span>
+                            <span>
+                                <img src="./imgs/star.png" alt="" >&nbsp;4.7
+                            </span>
+                        </span>
+                    </h4>
                     <p>489 kilometers away</p>
                     <p>21 Nov -1 Dec</p>
-                    <p><b>₹20,000</b>&nbsp;night</p>
-                </a>
+                    <p><b class="output-rate">₹20,000</b>&nbsp;night</p>
+                
             </div>
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/Karnataka,India/2.webp" alt="">
-                    <h4>Hosur,India</h4>
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/IN,India/1.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/2.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/3.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/4.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/5.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </div>
+                    <h4>Hosur,India
+                        <span>
+                            <span>
+                                <img src="./imgs/star.png" alt="" >&nbsp;4.7
+                            </span>
+                        </span>
+                    </h4>
                     <p>311 kilometers away</p>
                     <p>1 Dec -11 Dec</p>
-                    <p><b>₹45,000</b>&nbsp;night</p>
-                </a>
+                    <p><b class="output-rate">₹45,000</b>&nbsp;night</p>
+                
             </div>
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/Kodagu,India/4.webp" alt="">
-                    <h4>Chambebellur,India</h4>
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/IN,India/1.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/2.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/3.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/4.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/5.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </div>
+                    <h4>Chambebellur,India
+                        <span>
+                            <span>
+                                <img src="./imgs/star.png" alt="" >&nbsp;4.7
+                            </span>
+                        </span>
+                    </h4>
                     <p>112 kilometers away</p>
                     <p>23 Nov -28 Nov</p>
-                    <p><b>₹30,100</b>&nbsp;night</p>
-                </a>
+                    <p><b class="output-rate">₹30,100</b>&nbsp;night</p>
+                
             </div>
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/Kodaikanal,India/2.webp" alt="">
-                    <h4>Nilgiris,India</h4>
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/IN,India/1.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/2.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/3.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/4.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/5.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </div>
+
+                    <h4>Nilgiris,India
+                        <span>
+                            <span>
+                                <img src="./imgs/star.png" alt="" >&nbsp;4.7
+                            </span>
+                        </span>
+                    </h4>
                     <p>512 kilometers away</p>
                     <p>26 Nov -4 Dec</p>
-                    <p><b>₹12,030</b>&nbsp;night</p>
-                </a>
+                    <p><b class="output-rate">₹12,030</b>&nbsp;night</p>
+                
             </div>
         </div>
         <!-----------------------------GridRow4----------------------------->
         <div class="contentGridRow">
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/Kottathara,India/2.webp" alt="">
-                    <h4>Bilagola, India</h4>
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/IN,India/1.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/2.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/3.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/4.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/5.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </div>
+
+                    <h4>Bilagola, India
+                        <span>
+                            <span>
+                                <img src="./imgs/star.png" alt="" >&nbsp;4.7
+                            </span>
+                        </span>
+                    </h4>
                     <p>423 kilometers away</p>
                     <p>29 Nov -11 Dec</p>
-                    <p><b>₹22,900</b>&nbsp;night</p>
-                </a>
+                    <p><b class="output-rate">₹22,900</b>&nbsp;night</p>
+                
             </div>
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/Mananthavady,India/2.webp" alt="">
-                    <h4>Mysore,India</h4>
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/IN,India/1.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/2.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/3.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/4.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/5.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </div>
+                    <h4>Mysore,India
+                        <span>
+                            <span>
+                                <img src="./imgs/star.png" alt="" >&nbsp;4.7
+                            </span>
+                        </span>
+                    </h4>
                     <p>124 kilometers away</p>
                     <p>23 Nov -10 Dec</p>
-                    <p><b>₹11,005</b>&nbsp;night</p>
-                </a>
+                    <p><b class="output-rate">₹11,005</b>&nbsp;night</p>
+                
             </div>
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/Munnar,India/2.webp" alt="">
-                    <h4>Kotagiri,India</h4>
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/IN,India/1.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/2.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/3.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/4.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/5.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </div>
+
+                    <h4>Kotagiri,India
+                        <span>
+                            <span>
+                                <img src="./imgs/star.png" alt="" >&nbsp;4.7
+                            </span>
+                        </span>
+                    </h4>
                     <p>324 kilometers away</p>
                     <p>20 Nov -1 Nov</p>
-                    <p><b>₹45,100</b>&nbsp;night</p>
-                </a>
+                    <p><b class="output-rate">₹45,100</b>&nbsp;night</p>
+                
             </div>
             <div class="gridBox">
-                <a href="">
-                    <img src="./imgs/Farms/Tarur,India/2.webp" alt="">
-                    <h4>Krishnagiri,India</h4>
+                <div class="image-gallery">
+                    <div class="slides">
+                        <img src="./imgs/Farms/IN,India/1.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/2.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/3.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/4.webp" alt="">
+                        <img src="./imgs/Farms/Tarur,India/5.webp" alt="">
+                    </div>
+                
+                    <button class="prev-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </div>
+                    <h4>Krishnagiri,India
+                        <span>
+                            <span>
+                                <img src="./imgs/star.png" alt="" >&nbsp;4.7
+                            </span>
+                        </span>
+                    </h4>
                     <p>203 kilometers away</p>
                     <p>1 Dec -14 Dec</p>
-                    <p><b>₹17,999</b>&nbsp;night</p>
-                </a>
+                    <p><b class="output-rate">₹17,999</b>&nbsp;night</p>
+                
             </div>
         </div>
     </div>

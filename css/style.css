@@ -24,7 +24,7 @@
 
 .landingPopup p {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: underline;
     cursor: pointer; 
     width: 40%;
@@ -38,6 +38,7 @@
 }
 .navLogo img {
     width: 125px;
+    padding: 0;
 }
 
 .navMiddle {
@@ -195,7 +196,7 @@
     display: inline-block;
     vertical-align: middle;
     border-radius: 15px;
-    border: 1.75px solid #E8E8E8;
+    border: 1.5px solid #E8E8E8;
     height: fit-content;
     padding: 2px 14px;
     cursor: pointer;
@@ -219,7 +220,7 @@
     display: inline-block;
     vertical-align: middle;
     border-radius: 15px;
-    border: 1.75px solid #E8E8E8;
+    border: 1.5px solid #E8E8E8;
     height: fit-content;
     padding: 2px 14px 2px 14px;
     cursor: pointer;
@@ -237,14 +238,14 @@
     vertical-align: middle;
 }
 /* ---------------- Toogle -----------------------*/
-.switch {
+#switch {
     position: relative;
     display: inline-block;
     width: 38px;
     height: 24px;
   }
-  
-  .switch input { 
+
+  #switch input { 
     opacity: 0;
     width: 0;
     height: 0;
@@ -273,11 +274,11 @@
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
+
   input:checked + .slider {
     background-color: #222222;
   }
-  
+
   input:focus + .slider {
     box-shadow: 0 0 1px #222222;
   }
@@ -295,6 +296,9 @@
   .slider.round:before {
     border-radius: 50%;
   }
+
+
+
 /* --------------Image grid --------------------*/
 
 .contentGrid {
@@ -306,9 +310,7 @@
 }
 .contentGridRow {
     display: flex;
-  
     justify-content: space-between;
-    width: 1190px;
     height: 350px;
     margin-bottom: 45px;
 
@@ -318,12 +320,72 @@
     width: 23.5%;
     height:100%;
 
+
+}
+
+.image-gallery {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    border-radius: 100%;
+    background-color: white;
+    transform: translateY(-50%);
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2.5px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
+.gridBox .prev-button img {
+    text-decoration: none;
+    background-color: none;
+    width: 10px;
+    height: 10px;
+
+}
+
+.next-button {
+    right: 10px;
+}
+.prev-button {
+    left: 10px;
 }
 .gridBox img {
     width: 100%;
     height: 260px;
     object-fit: cover;
     border-radius: 5%;
+    
 }
 .gridContent{
     height: 90px;
@@ -358,3 +420,27 @@
     color: #717171;
 
 }
+
+
+
+
+
+@media (min-width: 1440px) { 
+    .navWrapper {
+        padding: 8px 80px;
+    }
+    .middleSection{
+        padding: 8px 80px;
+    }
+    .contentGrid{
+        padding: 8px 80px;
+    }
+    .landingPopup p {
+        font-size: 18px;
+    }
+    
+}
+
+@media (min-width: 1128px) {}
+
+@media (min-width: 744px)  {}
