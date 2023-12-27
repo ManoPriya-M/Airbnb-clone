@@ -10,6 +10,7 @@ This repository contains HTML and CSS files that replicate the visual layout of 
 
 Clone the repository.
 Open index.html in a web browser to view the project.
+(or) https://airbnb-clone-nine-roan.vercel.app/
 
 **Contributing**
 
